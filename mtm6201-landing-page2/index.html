@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Landing page</title>
         <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 <!--four different section inside the main class: header, introduction, contact, and the footer -->
     <body>
@@ -16,33 +16,37 @@
             <section class="intr">
                 <h2>Want to be your own boss?</h2>
                 <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
-                <img class="scooter" src="images/bg-image/scooter.svg" alt="scooter">
+                <div>
+                    <img class="scooter" src="images/bg-image/scooter.svg" alt="scooter">
+                </div>
             </section>
-            <form class="contact">
+            <div class="contact">
                 <div class="container"> 
                     <h1>Apply Now</h1>
                     <p>Enter your info below</p>
-                    <label for="fname">
-                        <input type="text" id="fname" name="firstname" placeholder="First name">
-                    </label>
-                    <label for="lname">
-                        <input type="text" id="lname" name="lastname" placeholder="Last name">
-                    </label>
-                    <label for="email">
-                        <input type="text" id="email" name="email" placeholder="Email address">
-                    </label>
-                    <label for="phone">
-                        <input type="text" id="phone" name="phone" placeholder="Phone number">
-                    </label>
-                    <label>
-                        <input type="checkbox" value="I agree to dash terms" name="agree">
-                    </label>
-                    <label>
-                        <input type="submit" value="DRIVE WITH US">
-                    </label>
-                    <p>Already applied? Check your application status here</p>
+                    <form class="form">
+                        <label for="fname">
+                            <input type="text" id="fname" name="firstname" placeholder="First name">
+                        </label>
+                        <label for="lname">
+                            <input type="text" id="lname" name="lastname" placeholder="Last name">
+                        </label>
+                        <label for="email">
+                            <input type="text" id="email" name="email" placeholder="Email address">
+                        </label>
+                        <label for="phone">
+                            <input type="text" id="phone" name="phone" placeholder="Phone number">
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checkbox">I agree to dash terms
+                        </label>
+                        <label>
+                            <input type="submit" class="greenbuttom" value="DRIVE WITH US">
+                        </label>
+                    </form>
+                    <p>Already applied? </p><a href="#">Check your application status here</a>
                 </div>
-            </form>
+            </div>
             <section class="footer">
                 <div class="footer-content">
                     <h4>See how much you can earn with Dash.</h4>
@@ -54,8 +58,8 @@
                         <label for="city">
                             <input type="text" id="city" placeholder="City">
                         </label>
-                        <button>CALCULATE</button>
-                    </div>
+                    <button>CALCULATE</button>
+                </div>
                     <div class="socialmedia">  
                         <img src="images/icons/facebook.svg" alt="facebook" class="icons">
                         <img src="images/icons/instagram.svg" alt="instagram" class="icons">
