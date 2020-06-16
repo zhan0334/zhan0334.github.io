@@ -15,7 +15,8 @@ body {
 }
 
 main{
-    margin: auto auto;
+    margin: 1rem;
+    margin-bottom: 0;
 }
 
 .header {
@@ -72,8 +73,6 @@ p  {
     flex-direction: column;
     justify-content: stretch;
     margin: auto auto;
-    margin-left: 2rem;
-    margin-right: 2rem;
 }
 
 input[type=text] {
