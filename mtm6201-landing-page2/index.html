@@ -26,6 +26,7 @@
                         <h1>Apply Now</h1>
                         <p>Enter your info below</p>
                         <form class="contact-form">
+                            <!--contact-form need be responsive-->
                             <label for="fname">
                                 <input type="text" id="fname" name="firstname" placeholder="First name">
                             </label>
@@ -45,7 +46,10 @@
                                 <input type="submit" class="greenbuttom" value="DRIVE WITH US">
                             </label>
                         </form>
-                        <p>Already applied? </p><a href="#">Check your application status here</a>
+                        <p>Already applied? </p>
+                        <div class="application">
+                            <p> Check your application status here</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -53,21 +57,23 @@
                 <div class="footer-content">
                     <h4>See how much you can earn with Dash.</h4>
                     <p>how many hours do you want to drive with us this week</p>
-                    <div class="caluclator-form">
-                        <label for="hours">
-                            <input type="text" id="hours" placeholder="Hours">
-                        </label>
-                        <label for="city">
-                            <input type="text" id="city" placeholder="City">
-                        </label>
+                </div>
+                <div class="caluclator-form">
+                    <label for="hours">
+                        <input type="text" id="hours" placeholder="Hours">
+                    </label>
+                    <label for="city">
+                        <input type="text" id="city" placeholder="City">
+                    </label>
                     <button>CALCULATE</button>
-                    </div>
-                    <div class="socialmedia">  
-                        <img src="images/icons/facebook.svg" alt="facebook" class="icons1">
-                        <img src="images/icons/instagram.svg" alt="instagram" class="icons2">
-                        <img src="images/icons/linkedin.svg" alt="linkedin" class="icons3">
-                        <img src="images/icons/twitter.svg" alt="twitter" class="icons4">
-                    </div> 
+                </div>
+                    <!--four socialmedia icons will be display in grid-->
+                <div class="socialmedia">  
+                    <img src="images/icons/facebook.svg" alt="facebook" class="icons1">
+                    <img src="images/icons/instagram.svg" alt="instagram" class="icons2">
+                    <img src="images/icons/linkedin.svg" alt="linkedin" class="icons3">
+                    <img src="images/icons/twitter.svg" alt="twitter" class="icons4">
+                </div> 
                 </div>
             </section>
         </main> 
