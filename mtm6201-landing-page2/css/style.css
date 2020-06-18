@@ -76,7 +76,7 @@ p  {
 }
 
 input[type=text] {
-    width: 70%;
+    max-width: 100%;
     font-family: 'montserrat-light', sans-serif;
     background-color: #eeeeee;
     padding: 12px 16px;
@@ -94,14 +94,29 @@ input[type=text] {
 }
 
  .greenbuttom {
+    width: 100%;
     text-align: center;
     font-family: 'montserrat-light', sans-serif;
     font-weight: bold;
-    margin-top: 2rem;
+    margin-top: 1rem;
     line-height: 3rem;
     background-color: #57eeab;
     border: none;
     border-radius: 15px;
+}
+
+p {
+    display: inline-block;
+    margin: 10px;
+    font-family: 'montserrat-light', sans-serif;
+    font-size: 1rem;
+}
+
+.application {
+    margin-right: 20px;
+    font-family: 'montserrat-light', sans-serif;
+    color: #ff8480;
+    font-weight: bold;
 }
 
 #hours {
@@ -114,8 +129,9 @@ input[type=text] {
 }
 
 button {
+    display: flex;
     flex-basis: 100%;
-    display: inline-block;
+    line-height: 3rem;
     background-color: #ff8480;
     font-size: 2rem; 
     font-family: 'montserrat-light', sans-serif;
@@ -127,28 +143,15 @@ button {
     margin-top: 2rem;
 }
 
-.container a {
-    display: inline-block;
-    color: #ff8480;
-    font-family: 'montserrat-light', sans-serif;
-    border: none;
-    border-radius: 10rem;
-    font-family: 'montserrat-light', sans-serif;
-    font-weight: bold;
-    text-align: center;
-}
-
 .calculator-form {
     display: flex;
     flex-wrap: wrap;
-    flex-grow: -1;
+    flex-grow: 1;
 }
 
 .socialmedia {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-around;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 
 .footer {
@@ -158,8 +161,11 @@ button {
 
 /*the tablet view*/
 @media (max-width: 500px) {
+    button {
+        flex-basis: 50%;
+    }
+    
     .calculator-form {
-        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
