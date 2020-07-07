@@ -1,0 +1,23 @@
+/*mobile view*/
+@font-face {
+    font: Raleway-
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3c3B3A;
+    --secondary-color: #26A682;
+}
+
+body {
+    background-color: white;
+}
+
+nav {
+    display: grid;
+    background-color: black;
+
+}
