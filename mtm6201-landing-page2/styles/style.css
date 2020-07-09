@@ -21,8 +21,8 @@ main{
 }
 
 .header-logo {
-    max-width: 30%;
-    margin: 0 auto;
+    max-width: 100px;
+    margin: 0;
 }
 
 h2 {
@@ -34,6 +34,7 @@ h2 {
 
 section, footer {
     padding: 20px;
+    display: block;
 }
 
 h1 {
