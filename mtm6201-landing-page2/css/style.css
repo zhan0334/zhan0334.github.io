@@ -1,7 +1,6 @@
-
 @font-face {
-    font-family: 'montserrat',sans-serif;
-    src: url(https://fonts.google.com/specimen/Montserrat?query=montserrat);
+    font-family: montserrat-black;
+    font-family: montserrat-light;
 }
 
 
@@ -16,13 +15,12 @@ body {
 }
 
 main{
-    margin: 1rem;
-    margin-bottom: 1px;
+    
 }
 
 .header-logo {
-    max-width: 100px;
-    margin: 0;
+    max-width: 30%;
+    margin: 0 auto;
 }
 
 h2 {
@@ -34,7 +32,6 @@ h2 {
 
 section, footer {
     padding: 20px;
-    display: block;
 }
 
 h1 {
@@ -178,10 +175,6 @@ button {
         display: flex;
 
     }
-    .logo {
-        width: 80px;
-        
-    }
 
-    
+
 }
