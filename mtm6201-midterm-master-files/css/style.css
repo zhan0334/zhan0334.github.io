@@ -1,7 +1,7 @@
 /*mobile view*/
 @font-face {
     font-family: raleway;
-    src: url(https://fonts.google.com/specimen/Raleway);
+    src: url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
 }
 
 * {
@@ -16,7 +16,7 @@
 
 body {
     background-color: var(--third-color);
-    font-family: raleway;
+    font-family: 'Raleway', sans-serif;
 }
 
 nav a:hover {
@@ -43,7 +43,7 @@ nav {
 
 .container {
     display: grid;
-    
+
 }
 
 /*I start my breakpoint start at 500px for the tablet*/
