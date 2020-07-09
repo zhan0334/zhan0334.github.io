@@ -1,6 +1,6 @@
 /*mobile view*/
 @font-face {
-    font-family: raleway;
+    font-family: 'Raleway', sans-serif;
     src: url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
 }
 
@@ -25,11 +25,16 @@ nav a:hover {
 }
 
 nav {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-auto-rows: auto; 
     background-color: var(--primary-color);
+}
+
+nav ul {
+    display: block;
+    grid-auto-rows: auto; 
     color: var(--third-color);
+    font-family: 'Ralewey',sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
     align-items: center;
     text-decoration: none;   
 }
@@ -41,11 +46,16 @@ nav {
     margin-right: auto;
 }
 
-.container {
-    display: grid;
-
+main {
+    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
+.icon {
+    display:grid;
+    text-justify: start;
+    grid-template-columns: repeat(2,1fr);
+}
 /*I start my breakpoint start at 500px for the tablet*/
 @media (max-width: 500px) {
    nav {
