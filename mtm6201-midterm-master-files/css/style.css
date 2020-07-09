@@ -1,23 +1,55 @@
 /*mobile view*/
 @font-face {
-    font: Raleway-
+    font-family: raleway;
+    src: url(https://fonts.google.com/specimen/Raleway);
 }
 
 * {
     box-sizing: border-box;
 }
-
+/*try to use the root to control the color I used for the mockup,easy for future changes*/
 :root {
     --primary-color: #3c3B3A;
     --secondary-color: #26A682;
+    --third-color:#f2f2f2;
 }
 
 body {
-    background-color: white;
+    background-color: var(--third-color);
+    font-family: raleway;
+}
+
+nav a:hover {
+    color: var(--third-color);
+
 }
 
 nav {
     display: grid;
-    background-color: black;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: auto; 
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    align-items: center;
+    text-decoration: none;   
+}
 
+
+.logo {
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: grid;
+    
+}
+
+/*I start my breakpoint start at 500px for the tablet*/
+@media (max-width: 500px) {
+   nav {
+       grid-template-columns: 100%;
+       grid-gap: 1rem;
+   }
 }
