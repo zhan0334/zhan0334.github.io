@@ -29,14 +29,28 @@ nav {
 }
 
 nav ul {
-    display: block;
+    display: grid;
     grid-auto-rows: auto; 
     color: var(--third-color);
     font-family: 'Ralewey',sans-serif;
     font-weight: bold;
+    text-align: center;
+    text-decoration: none;
     font-size: 2rem;
     align-items: center;
     text-decoration: none;   
+}
+
+.discover h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.p1 {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 2rem;
 }
 
 
@@ -53,13 +67,18 @@ main {
 
 .icon {
     display:grid;
-    text-justify: start;
+    text-justify: center;
     grid-template-columns: repeat(2,1fr);
 }
+
+
 /*I start my breakpoint start at 500px for the tablet*/
 @media (max-width: 500px) {
    nav {
        grid-template-columns: 100%;
        grid-gap: 1rem;
    }
+
+
 }
+
