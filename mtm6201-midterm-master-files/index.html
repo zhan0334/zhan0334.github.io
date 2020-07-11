@@ -11,9 +11,9 @@
     <nav id="nav" class="nav">
         <img src="images/logo.svg" alt="logo" class="logo">
         <ul>
-            <a class="active" href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <!--This is main body content of the home page-->
@@ -23,7 +23,7 @@
             <p class= "p1">With Algonquin College's newest facility,there's alwasys
             something for everyone to discover and enjoy!</p>
     <!--The four icons in a div easier to using flex-->
-            <div class="icon">
+            <div class="icon1">
                 <figure>
                     <img src="icons/bowling.png" alt="bowling" class="bowling">
                     <figcaption>Bowling</figcaption>
@@ -41,11 +41,19 @@
                     <figcaption>Indoor Court</figcaption>
                 </figure>
             </div>
+            <button class="started">Get Started</button>
             <img src="images/discover.svg" alt="discover" class="discover">
         </section>
-        <button class="started">Get Started</button>
+        <!--The next section start from here-->
         <section class="algonquin">
-            <img src="images/school.jpg" alt="school" class="school">
+            <!--i use the srcset image will change size -->
+            <img srcset="images/school-375_X_200.jpg"  375w,
+                         images/school-768_X_200.jpg   768w,
+                         images/school-813X_337.jpg    813w"
+                 sizes="(min-width: 500px) 25vw,
+                        (min-width: 700px) 30wv,
+                        (min-width: 1200px) 35wv">
+    
             <h1>Discover</h1>
             <h2>Algonquin College</h2>
             <p class="p2">
@@ -55,6 +63,7 @@
             </p>
         </section>
         <button class="learnmore">Learn More</button>
+        <!--the banner section start need to change the background color-->
         <section class="banner">
             <img src="images/simon.jpg" alt="simon" class="simon">
             <h3>Dijanelle Simon </h3>
@@ -68,6 +77,7 @@
             </p>
         </section>
         <section class="entertainment1">
+            <img src="images/entertainment.jpg" alt="entertainment" class="entertainment">
             <h1>Discover</h1>
             <h2>The entertainment</h2>
             <p class="p4">
@@ -76,7 +86,6 @@
                 not only will it be providing more space for the students to study, but it will also
                 be bringing in more room for late-night entertainment.
             </p>
-            <img src="images/entertainment.jpg" alt="entertainment" class="entertainment">
         </section>
     </main>
     <footer>
@@ -87,7 +96,7 @@
             <img src="icons/twitter.svg" alt="twitter" class="tw">
             <img src="icons/youtube.svg" alt="youtube" class="yt">
         </nav>
-        <img src="icons/gototop.png" alt="backtotop">
+        <a img id="backtotop" alt="back to top" src="icons/backtotop.png">back to top</a>
     </footer>
 </body>
 </html>

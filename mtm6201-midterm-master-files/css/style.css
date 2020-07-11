@@ -7,78 +7,110 @@
 * {
     box-sizing: border-box;
 }
-/*try to use the root to control the color I used for the mockup,easy for future changes*/
-:root {
-    --primary-color: #3c3B3A;
-    --secondary-color: #26A682;
-    --third-color:#f2f2f2;
-}
 
 body {
-    background-color: var(--third-color);
+    background-color: #f2f2f2;
     font-family: 'Raleway', sans-serif;
-}
-
-nav a:hover {
-    color: var(--third-color);
-
-}
-
-nav {
-    background-color: var(--primary-color);
-}
-
-nav ul {
-    display: grid;
-    grid-auto-rows: auto; 
-    color: var(--third-color);
-    font-family: 'Ralewey',sans-serif;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    font-size: 2rem;
-    align-items: center;
-    text-decoration: none;   
-}
-
-.discover h1{
-    text-align: center;
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-.p1 {
-    font-size: 1rem;
-    text-align: center;
-    line-height: 2rem;
-}
-
-
-.logo {
-    max-width: 150px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 main {
     margin: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
-.icon {
-    display:grid;
-    text-justify: center;
+nav {
+    background-color: #3c3b3a;
+}
+
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    width: 400px;
+    height: 100%;
+    overflow: auto;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+nav ul a {
+    display: block;
+    color: #f2f2f2;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #f2f2f2;
+}
+
+.logo {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.p1 {
+    font-family: 'Raleway-regular' sans-serif ;
+    line-height: 2rem;
+}
+
+.icon1 {
+    display: grid;
     grid-template-columns: repeat(2,1fr);
 }
 
+.started {
+    border-radius: 3rem;
+    border-style: hidden;
+    border: 3px solid #124A3A;
+    background-color: #26A682;
+    color: #f2f2f2;
+}
 
-/*I start my breakpoint start at 500px for the tablet*/
-@media (max-width: 500px) {
-   nav {
-       grid-template-columns: 100%;
-       grid-gap: 1rem;
-   }
+.discover {
+    width: 300px;
+}
 
+.container {
+    box-sizing: border-box;
+    border: 0;
+}
+
+.algonquin {
+    background-color: #f2f2f2;
 
 }
 
+.banner {
+    background-color: #3c3b3a;
+    border: 4px solid #124A3A;
+    font-family: 'Raleway', sans-serif;
+    color: #f2f2f2; 
+    text-align: center;
+}
+
+.p3 {
+    text-align: justify;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    line-height: 2rem;
+}
+
+.banner img {
+    border-radius: 30rem;
+    display: block;
+    max-width: 175px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.enterainment {
+    width: 100px;
+}
+/*I start my breakpoint start at 500px for the tablet*/
+@media (max-width: 700px) {
+    
+}

@@ -11,15 +11,55 @@
     <nav id="nav" class="nav">
         <img src="images/logo.svg" alt="logo" class="logo">
         <ul>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a class="active" href="contact.html">Contact</a>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <main>
-        <section>
-            
+    <main class="container">
+        <!--this the main body content of the contact page start-->
+        <section class="contactform">
+            <div class="contact">
+                <h1>We Want to Hear From You</h1>
+                <p class="p13">If you have an idea for an actiivity that you think you and your fellow 
+                students would love to participate in that we are not already offering,
+                we want to know about it!
+                </p>
+            </div>
+            <img src="images/contact-img.svg" alt="contact-img" class="contact-img">
+            <form class="contact-form">
+                <h3>Contact Us</h3>
+                <label for="fname">Full Name</laber>
+                <input type="text" id="fname" name="fname" value="Full Name">
+                <label for="number">Student Number</laber>
+                <input type="text" id="student-number" value="Student Number">
+                <label for="email">Email</label>
+                <input type="text" id="email" value="Email">
+                <label>Message</label>
+                <input type="text" id="message" value="Message">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section class="location">
+            <h2>Our Location</h2>
+            <h3>Algonquin College Students' Association</h3>
+            <p>Monday to Friday- 8:30am to 6:00pm
+                1385 Woodroffe Avenue (E114)
+                Ottawa, Ontario K2G 1V8
+                (613)727-4723X7711 
+            </p>
+            <img src="images/map.png" alt="map" class="map">
         </section>
     </main>
+    <footer>
+        <h3>Follow us</h3>
+        <nav class="socialmedia">
+            <img src="icons/facebook.svg" alt="facebook" class="fb">
+            <img src="icons/instagram.svg" alt="instagram" class="ig">
+            <img src="icons/twitter.svg" alt="twitter" class="tw">
+            <img src="icons/youtube.svg" alt="youtube" class="yt">
+        </nav>
+        <img id="backtotop" alt="back to top" src="icons/backtotop.png">back to top</a>
+    </footer>
 </body>
 </html>
