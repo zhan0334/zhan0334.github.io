@@ -14,6 +14,8 @@ body {
 }
 
 main {
+    border: 0;
+    border-bottom: 1em;
     margin: 1rem;
     margin-bottom: 0;
 }
@@ -73,11 +75,6 @@ nav a:hover {
     width: 300px;
 }
 
-.container {
-    box-sizing: border-box;
-    border: 0;
-}
-
 .algonquin {
     background-color: #f2f2f2;
 
@@ -109,6 +106,23 @@ nav a:hover {
 
 .enterainment {
     width: 100px;
+}
+
+.footer {
+    background-color: #3c3B3A;
+    border: 125px solid #707070;
+    margin: 1rem;
+    margin-top: 3rem;
+
+}
+
+.icon2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 10px;
+}
+.socialmedia {
+
 }
 /*I start my breakpoint start at 500px for the tablet*/
 @media (max-width: 700px) {

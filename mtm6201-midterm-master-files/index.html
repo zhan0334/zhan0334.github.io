@@ -47,12 +47,11 @@
         <!--The next section start from here-->
         <section class="algonquin">
             <!--i use the srcset image will change size -->
-            <img srcset="images/school-375_X_200.jpg"  375w,
-                         images/school-768_X_200.jpg   768w,
-                         images/school-813X_337.jpg    813w"
-                 sizes="(min-width: 500px) 25vw,
-                        (min-width: 700px) 30wv,
-                        (min-width: 1200px) 35wv">
+            <picture>
+                <source srcset="images/school-813_X_337.jpg" media="(min-width:1200px)">
+                <source srcset="images/school-768_X_200.jpg" media="(min-width:700px)">
+                <img srcset="images/school-375_X_200.jpg">
+            </picture>
     
             <h1>Discover</h1>
             <h2>Algonquin College</h2>
@@ -77,7 +76,12 @@
             </p>
         </section>
         <section class="entertainment1">
-            <img src="images/entertainment.jpg" alt="entertainment" class="entertainment">
+            <!--change the image size with srcset -->
+            <picture>
+                <source srcset="images/entertainment-813_X_337.jpg" media="(min-width:1200px)">
+                <source srcset="images/entertainment-768_X_200.jpg" media="(min-width:700px)">
+                <img srcset="images/entertainment-375_X_200.jpg">
+            </picture>
             <h1>Discover</h1>
             <h2>The entertainment</h2>
             <p class="p4">
@@ -96,7 +100,7 @@
             <img src="icons/twitter.svg" alt="twitter" class="tw">
             <img src="icons/youtube.svg" alt="youtube" class="yt">
         </nav>
-        <a img id="backtotop" alt="back to top" src="icons/backtotop.png">back to top</a>
+        <img id="backtotop" alt="back to top" src="icons/backtotop.png">back to top</a>
     </footer>
 </body>
 </html>
