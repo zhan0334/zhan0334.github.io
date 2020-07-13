@@ -19,23 +19,27 @@
      <!--same container with home page easy to navigate-->
     <main class="container">
         <section class="expect">
-            <img src="images/construction.svg" alt="construction" class="construction">
-            <h1>What to expect during</h1>
+            <h1>What to expect during construction</h1>
             <p class="p5">
-                With construction starting in April 2019 we anticipate the new arrival of the 
-                The current SA Fitness Zone and gym will be operating and open as usual. Please
+                With construction starting in April 2019 we anticipate the new arrival of the ARC building
+                as early as Augest 2021. </P>
+            <P class="p5"> The current SA Fitness Zone and gym will be operating and open as usual. Please
                 visit the Fitness Zone and the Gymnasium for more information on the hours,
                 offerings, and pricing.
             </p>
+            <img src="images/construction.svg" alt="construction" class="construction">
         </section>
-        <section>
-             <!--absorb responsive image add here with text about -->
-             <picture>
-                <source srcset="images/about-1920_X_250.jpg" media="(min-width:1200px)">
-                <source srcset="images/about-768_X_200.jpg" media="(min-width:700px)">
-                <img srcset="images/about-375_X_200.jpg">
-            </picture>
-            <h1>who</h1>
+        <section class="introduction">
+             <!--I add class for picture for about page becasue there are picture will not display in the mobile view -->
+             <div class="picture1">
+                 <div class="content">About</div>
+                <picture>
+                    <source srcset="images/about-1920_X_250.jpg" media="(min-width:1200px)">
+                    <source srcset="images/about-768_X_200.jpg" media="(min-width:700px)">
+                    <img src="images/about-375_X_200.jpg">
+                </picture>
+            </div>
+            <h1>Who</h1>
             <p class="p6">
                 is ARC?We are the Athletics & Recreation Centre. This is an exciting venture
                 for our Algonquin Community. This facility will provide our students with a place to break
@@ -54,18 +58,23 @@
                 building, opposite of the residence. The facility will be an estimated 100,000 square feet! 
                 Connected to the Student Commmons by a "Plus 15" Pedestrian Link.
             </p>
-            <picture>
-                <source srcset="images/services-1920_X_250.jpg" media="(min-width:1200px)">
-                <source srcset="images/services-768_X_200.jpg" media="(min-width:700px)">
-                <img srcset="images/services-375_X_200.jpg">
-            </picture>
+            <div class="picture2">
+                <div class="content">Services</div>
+                <picture>
+                    <source srcset="images/services-1920_X_250.jpg" media="(min-width:1200px)">
+                    <source srcset="images/services-768_X_200.jpg" media="(min-width:700px)">
+                    <img srcset="images/services-375_X_200.jpg">
+                </picture>
+            </div>
         </section>
-        <section>
-            <picture>
-                <source srcset="images/bar-813_X_337.jpg" media="(min-width:1200px)">
-                <source srcset="images/bar-218_X_375.jpg" media="(min-width:700px)">
-                <img src="images/bar.jpg">
-            </picture>
+        <section class="break">
+            <div class="picture3">
+                <picture>
+                    <source srcset="images/bar-813_X_337.jpg" media="(min-width:1200px)">
+                    <source srcset="images/bar-218_X_375.jpg" media="(min-width:700px)">
+                    <img src="images/bar.jpg">
+                </picture>
+            </div>
             <h1>Need a break?</h1>
             <h2>Restaurant & Loung</h2>
             <p class="p9">
@@ -75,14 +84,16 @@
                 and try out the new bowling lines!
             </p>
         </section>
-        <section>
-            <picture>
-                <source srcset="images/bowling-813_X_337.jpg" media="(min-width:1200px)">
-                <source srcset="images/bowling-218_X_375.jpg" media="(min-width:700px)">
-                <img src="images/bowling.jpg">
-            </picture>
-            <h1>Competitive friends?</h1>
-            <h3>Bowling Lans</h3>
+        <section class="bowling">
+            <div class="picture4">
+                <picture>
+                    <source srcset="images/bowling-813_X_337.jpg" media="(min-width:1200px)">
+                    <source srcset="images/bowling-218_X_375.jpg" media="(min-width:700px)">
+                    <img src="images/bowling.jpg">
+                </picture>
+            </div>
+            <h1>Competitive Friends?</h1>
+            <h2>Bowling Lanes</h2>
             <p class="p10">
                 Are finally here. Grab your friends and book a lane ate the Students' Association Bowling Lanes
                 that will be part of the upcoming ARC!Don't like bowling? Well, look no further. Practice your 
@@ -93,13 +104,15 @@
             <h1>Keep up to date with our news letter</h1>
             <button class="subscribe">Subscribe</button>
         </div>
-        <section>
-            <picture>
-                <source srcset="images/fitness-813_X_337.jpg" media="(min-width:1200px)">
-                <source srcset="images/fitness-218_X_375.jpg" media="(min-width:700px)">
-                <img srcset="images/fitness.jpg">
-            </picture>
-            <h1>New year, new me</h1>
+        <section class="newyear">
+            <div class="picture5">
+                <picture>
+                    <source srcset="images/fitness-813_X_337.jpg" media="(min-width:1200px)">
+                    <source srcset="images/fitness-218_X_375.jpg" media="(min-width:700px)">
+                    <img srcset="images/fitness.jpg">
+                </picture>
+            </div>
+            <h1>New year, new me.</h1>
             <h2>Fitness Rooms</h2>
             <p class="p11">
                 Cardio equipment, free weights, selectorized weight equipment and stretching
@@ -108,12 +121,14 @@
                 and declines that weave around fit ness nods, the gymnasiums and the lounge area.
             </p>
         </section>
-        <section>
-            <picture>
-                <source srcset="images/bowling-813_X_337.jpg" media="(min-width:1200px)">
-                <source srcset="images/bowling-218_X_375.jpg" media="(min-width:700px)">
-                <img srcset="images/bowling.jpg">
-            </picture>
+        <section class="attivity">
+            <div class="picture6">
+                <picture>
+                    <source srcset="images/climbing-813_X_337.jpg" media="(min-width:1200px)">
+                    <source srcset="images/climbing-218_X_378.jpg" media="(min-width:700px)">
+                    <img srcset="images/climbing.jpg">
+                </picture>
+            </div>
             <h1>Indoor climbing?</h1>
             <h2>Rock climbing</h2>
             <p class="p12">
@@ -123,7 +138,7 @@
                 therapy area.
             </p>
         </section>
-        <section>
+        <section class="special">
             <h1>Special thank you</h1>
             <div class="icons2">
                 <img src="images/sa.png" alt="sa" class="sa">
