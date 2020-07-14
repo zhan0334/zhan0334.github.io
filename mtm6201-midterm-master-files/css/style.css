@@ -219,14 +219,6 @@ footer h3 {
 }
 
 /*absolute text on these two class*/
-.content {
-    position: absolute;
-    display: block;
-    text-align: center;
-    transform: translate(50%, 50%) rgb(38,166, 130);
-    color: #f2f2f2;
-    font-size: 50px;
-}
 /*opacity over these two images with transition ease-in*/ 
 .picture1 > .box1 {
     background-color: #26a682;
