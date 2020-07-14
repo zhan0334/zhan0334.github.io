@@ -20,79 +20,92 @@
     <!--This is main body content of the home page-->
     <main class="container">
         <section class="discover">
-            <h1>Discover Your ARC</h1>
-            <p class= "p1">With Algonquin College's newest facility,there's alwasys
-            something for everyone to discover and enjoy!</p>
-    <!--The four icons in a div easier to using flex-->
-            <div class="icon1">
-                <figure>
-                    <img src="icons/bowling.png" alt="bowling" class="bowling">
-                    <figcaption>Bowling</figcaption>
-                </figure>
-                <figure>
-                    <img src="icons/climb.png" alt="climb" class="rockclimbing">
-                    <figcaption>Rock Climbing</figcaption>
-                </figure>
-                <figure>
-                    <img src="icons/fitness.png" alt="gym" class="gym">
-                    <figcaption>Fintness Center</figcaption>
-                </figure>
-                <figure>
-                    <img src="icons/indoor.png" alt="basketball" class="basketball">
-                    <figcaption>Indoor Court</figcaption>
-                </figure>
+            <div class="discover-container">
+                <h1>Discover Your ARC</h1>
+                <p class= "p1">With Algonquin College's newest facility,there's alwasys
+                something for everyone to discover and enjoy!</p>
+            <!--The four icons in a div easier to using flex-->
+                <div class="icon1">
+                    <figure>
+                        <img src="icons/bowling.png" alt="bowling" class="bowling">
+                        <figcaption>Bowling</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="icons/climb.png" alt="climb" class="rockclimbing">
+                        <figcaption>Rock Climbing</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="icons/fitness.png" alt="gym" class="gym">
+                        <figcaption>Fintness Center</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="icons/indoor.png" alt="basketball" class="basketball">
+                        <figcaption>Indoor Court</figcaption>
+                    </figure>
+                </div>
+                <button class="started">Get Started</button>
             </div>
-            <button class="started">Get Started</button>
-            <img src="images/discover.svg" alt="discover" class="discover1">
+            <div class="discover-img">
+                <img src="images/discover.svg" alt="discover" class="discover1">
+            </div>
         </section>
         <!--The next section start from here-->
-        <section class="algonquin">
+        <div class="algonquin">
             <!--i use the srcset image will change size -->
             <picture>
                 <source srcset="images/school-813_X_337.jpg" media="(min-width:1200px)">
                 <source srcset="images/school-768_X_200.jpg" media="(min-width:700px)">
                 <img srcset="images/school-375_X_200.jpg">
             </picture>
-            <!--the discover text section with button learn more -->
-            <h1>Discover</h1>
-            <h2>Algonquin College</h2>
-            <p class="p2">
-                of Applied Arts and Technology is a publicly funded English-language
-                college located in Ottawa, Ontariio, Canada. The college serves the National
-                Capital Region and the outlying areas of Eastern Ontario, Western Quebec, and Upstate New York.
-            </p>
-            <button class="learnmore">Learn More</button>
-        </section>
+            <!--add this class easy to navigate the section into two columns in the disktop view-->
+            <div class="algonquin1">
+                <h2>Discover</h2>
+                <h3>Algonquin College</h3>
+                <p class="p2">
+                    of Applied Arts and Technology is a publicly funded English-language
+                    college located in Ottawa, Ontariio, Canada. The college serves the National
+                    Capital Region and the outlying areas of Eastern Ontario, Western Quebec, and Upstate New York.
+                </p>
+                <!--the discover text section with button learn more -->
+                <button class="learnmore">Learn More</button>
+            </div>
+        </div>
         <!--the banner section start need to change the background color-->
         <section class="banner">
-            <img src="images/simon.jpg" alt="simon" class="simon">
-            <h3>Dijanelle Simon </h3>
-            <h3>SA President</h3>
-             <!--try to separater all the text using different class-->
-            <p class="p3">
-                "Only with increased capacity can we expand and create a more inclusive program that
-                attracts a greeater number of students to participate in physical and social activity. The
-                Students' Association is committed to and focused on programming that results in our 
-                students taking person ownership for their health."
-            </p>
+            <div class="simon-img">
+                <img src="images/simon.jpg" alt="simon" class="simon-img">
+                <h2>Dijanelle Simon 
+                    SA President</h2>
+            </div>
+            <div class="simon">
+                <!--try to separater all the text using different class-->
+                <p class="p3">
+                    "Only with increased capacity can we expand and create a more inclusive program that
+                    attracts a greeater number of students to participate in physical and social activity. The
+                    Students' Association is committed to and focused on programming that results in our 
+                    students taking person ownership for their health."
+                </p>
+            </div>
         </section>
-        <section class="entertainment">
+        <div class="entertainment">
             <!--change the image size with srcset -->
             <picture>
                 <source srcset="images/entertainment-813_X_337.jpg" media="(min-width:1200px)">
                 <source srcset="images/entertainment-768_X_200.jpg" media="(min-width:700px)">
                 <img srcset="images/entertainment-375_X_200.jpg">
             </picture>
-            <h1>Discover</h1>
-            <h2>The entertainment</h2>
-            <p class="p4">
-                at Algonquin College is endless. We currently have the Algonquin Commons
-                Theatre where we host a variety of events.Now with the coming of the ARC facility,
-                not only will it be providing more space for the students to study, but it will also
-                be bringing in more room for late-night entertainment.
-            </p>
-            <button class="learnmore">Learn More</button>
-        </section>
+            <div class="entertainment1">
+                <h2>Discover</h2>
+                <h3>The entertainment</h3>
+                <p class="p4">
+                    at Algonquin College is endless. We currently have the Algonquin Commons
+                    Theatre where we host a variety of events.Now with the coming of the ARC facility,
+                    not only will it be providing more space for the students to study, but it will also
+                    be bringing in more room for late-night entertainment.
+                </p>
+                <button class="learnmore">Learn More</button>
+            </div>
+        </div>
     </main>
     <footer>
         <h3>Follow us</h3>

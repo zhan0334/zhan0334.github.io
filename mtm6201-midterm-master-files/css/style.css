@@ -9,8 +9,9 @@
 }
 
 body {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     font-family: 'Raleway', sans-serif;
+    background-color: #ffffff;
 }
 /* I set the padding 20px to match the mockup white space padding*/
 main {
@@ -18,9 +19,14 @@ main {
     margin-bottom: 0;
 }
 
+section {
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+}
+
 .nav {
     border: 1px solid #707070;
-    padding-bottom: 10px;
     background-color:#3c3b3a;
 }
 
@@ -31,7 +37,7 @@ nav ul {
 }
 
 nav ul a {
-    display: inline-block;
+    display: block;
     text-align: center;
     font-family: 'raleway', sans-serif;
     text-decoration: none;
@@ -52,29 +58,27 @@ nav a:hover {
 .icon1 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    border: 0;
 }
-/*button started*/
+/*button started in the home page*/
 .started {
-    border: 1px;
+    border: 0;
     border-radius: 30px;
     width: 300px;
     height: 50px; 
     box-shadow:5px 10px 18px #124a3a;
     background-color: #26A682;
     color: #f2f2f2;
-    margin-top: 5px;
-    margin-left: auto;
-
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
 }
 
-.section {
-    display: inline-block;
-}
 /*the mockup discover image max-width is 350*/
-.discover {
-    max-width: 300px;
-    margin-top: 2rem;
-    margin-bottom: 30px;
+.discover1 {
+   max-width: 350px;
+   margin-top: 20px;
+   margin-bottom: 20px;
 }
 
 .icon1 {
@@ -86,35 +90,80 @@ nav a:hover {
     color: #36a682;
 }
 
-section .algonquin {
-    background-color: #f2f2f2;
-}
-
-/* I use the padding for the discover your ARC to match the mockup because I don't want 
-change the whole container padding*/
+/*font for all the text*/
 h1 {
     margin: 20px;
-    font-family: 'Raleway-regular', sans-serif;
-    font-weight: lighter;
+    font-family: 'Raleway-bold', sans-serif;
+    font-size: 40px;
+    color: #3C3B3A;
+    margin-left: 20px;
+
 }
 
-.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9,
-.p10, .p11, .p12, .p13, .p14 {
-    font-family: 'Raleway-regular' sans-serif ;
+.special h1 {
+    margin-left:20px;
+    margin-right: 20px;
+    font-size: 56px;
+    font-family: 'Raleway-bold', sans-serif;
+    border: 0;
+}
+
+.simon-img h2 {
+    font-family: 'Raleway-semiBold Italic', sans-serif;
+    font-size: 24px;
+    color: #f2f2f2;
+}
+
+h2 {
+    font-family: 'Raleway-semiBold Italic', sans-serif;
+    font-size: 32px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color:#3C3B3A;   
+}
+
+h3 {
+  font-family: 'Raleway-Regular',sans-serif;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #26A682;
+}
+
+.p1,.p3, .p5, .p13,.p15 {
+    font-family: 'Raleway-regular',sans-serif ;
+    font-size: 20px;
     line-height: 2rem;
     margin-left: 20px;
     margin-right: 20px;
     text-align: start;
+    border: 0;
 }
 
-h2 {
-    color: #26a682;
+.p6, .p7,.p8 {
+    font-family:'Raleway-regular', sans-serif;
+    font-size: 16px;
+     line-height: 2rem;
     margin-left: 20px;
-    font-size: 20px;
-    font-family: 'Raleway-bold Italic', sans-serif;
+    margin-right: 20px;
+    border: 0;
 }
 
-/* buttom learn more */
+.p2,.p4,.p9,.p10,.p11,.p12,.p14  {
+    font-family: 'Raleway-light', sans-serif;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 0;
+}
+
+footer h3 {
+    color: #f2f2f2;
+}
+
+/* buttom learn more in the home page*/
 .learnmore {
     display: block;
     border: 1px;
@@ -125,7 +174,7 @@ h2 {
     background-color: #26A682;
     color: #f2f2f2;
     margin-left: auto;
-
+    margin-bottom: 20px;
 }
 
 .banner {
@@ -137,6 +186,7 @@ h2 {
     text-align: center;
 }
 
+/*subscribe buttom in the about page*/
 .subscribe {
     display: block;
     border: 0;
@@ -150,19 +200,50 @@ h2 {
     margin-right: auto; 
 }
 
-.banner img {
+.simon-img {
     border-radius: 30rem;
     display: block;
     max-width: 175px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*those image in the mobile view doesn't show up*/
+.picture3, .picture4,.picture5,.picture6 {
+    display: none;
 }
 
 .enterainment {
     width: 100px;
 }
 
-/*four section need change background color*/
-.expect,.break,.newyear,.special {
-    background-color: #ffffff;
+/*absolute text on these two class*/
+.content {
+    position: absolute;
+    display: block;
+    text-align: center;
+    transform: translate(50%, 50%) rgb(38,166, 130);
+    color: #f2f2f2;
+    font-size: 50px;
+}
+/*opacity over these two images with transition ease-in*/ 
+.picture1 > .box1 {
+    background-color: #26a682;
+    width: 375px;
+    height: 200px;
+    position: absolute;
+    transition: ease-in-out 0.2s;
+    opacity: 0.5;
+}
+
+.picture2 > .box2 {
+    background-color: #26a682;
+    width: 375px;
+    height: 200px;
+    position: absolute;
+    transition: ease-in-out 0.2s;
+    opacity: 0.5;
 }
 
 .construction {
@@ -172,26 +253,12 @@ h2 {
     margin-bottom: 20px;
 }
 
-/*absolute text on these two class*/
-.content {
-    position: absolute;
-    text-align: center;
-    transform: translate(50%, 50%);
-    color: #f2f2f2;
-    font-size: x-large;
+.wrapper, .bowling, .attivity {
+    background-color: #f2f2f2;
 }
-/*opacity over these two images*/ 
-.picture1 .picture2 {
-   position: absolute;
-   background-color: rgb(38 166 130 100);
-}
-/*those image in the mobile view doesn't show up*/
- .picture3, .picture4,.picture5,.picture6 {
-     display: none;
- }
 
- /*four icons from the special class, responsive for three different size*/
- .icons2 {
+/*four icons from the special class, responsive for three different size*/
+.icons2 {
     display: grid;
     grid-template-rows: repeat(1,1fr);
     grid-gap: 2px;
@@ -226,10 +293,10 @@ h2 {
  }
 
  .contact-img {
-     width: 302px;
-     margin-left: 20px;
-     margin-right: 20px;
- }
+    width: 302px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
  .contact-form {
     display: flex;
@@ -272,15 +339,13 @@ input[type=submit] {
     margin-top: 20px;
 }
 
-h3 {
-    margin: 20px;
-    font-size: 1rem;
-    font-family: 'Raleway-regular', sans-serif;
+.map {
+    border: 0;
 }
 
 footer {
     background-color: #3c3B3A;
-    padding: 0px;
+    padding: 0;
     color: #f2f2f2;
     text-align: center;
 }
@@ -294,45 +359,172 @@ footer {
 .backtotop {
     max-width: 100%;
 }
-/*I start my breakpoint start at 600px for the tablet*/
+
 @media (min-width: 600px) {
-    main {
-
-    }
-
-    section {
-        width: 768px;
-    }
-
-    .nav ul{
+    nav {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(2,1fr);
     }
 
-    .icons1 {
-        grid-template-columns: repeat(1,1fr);
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .icon1 {
+        grid-template-columns: repeat(4,0.2fr);
+        grid-template-rows: none;
+    }
+
+    .discover {
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .discover1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .started {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    
+    .banner { 
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .p3 {
+        border: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+     
+    .simon {
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .picture1 > .box1 {
+        background-color: #26a682;
+        width: 768px;
+        height: 200px;
+        position: absolute;
+        transition: ease-in-out 0.2s;
+        opacity: 0.5;
+    }
+    
+    .picture2 > .box2 {
+        background-color: #26a682;
+        width: 768px;
+        height: 200px;
+        position: absolute;
+        transition: ease-in-out 0.2s;
+        opacity: 0.5;
     }
 
     .picture3, .picture4,.picture5,.picture6 {
-        display: grid; 
-        grid-row: 2fr;
+        display: block;
     }
-
-    .break,.bowling,.newyear,.attivity {
+    
+   
+    .break, .newyear {
         display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
 
-    .picture3:nth-child(1) {
-        
+    .break .picture3:nth-child(1){
+        order: 1;
     }
+
+    .attivity .picture6:nth-child(1){
+        order: 1;
+    }
+ 
+    .bowling, .attivity {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .bowling div:nth-child(2){
+        order: 1;
+    }
+
+
 }
 
+/*disktop view start from here*/
 @media (min-width: 1200px) {
+    .discover {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: none;
+    }
+
     .discover1 {
-        display: none;
-        background-image: url('images/discover.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
+        max-width: 950px;
+    }
+
+    .contactform {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        border: 0;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .location {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 50px;
+        border: 0;
+        margin-left: 30px;
+        margin-right: 50px;
+    }
+    
+    .expect {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        border: 0;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .picture1 > .box1 {
+        background-color: #26a682;
+        width: 1920px;
+        height: 250px;
+        position: absolute;
+        transition: ease-in 0.2s;
+        opacity: 0.5;
+    }
+    
+    .picture2 > .box2 {
+        background-color: #26a682;
+        width: 1920px;
+        height: 250px;
+        position: absolute;
+        transition: ease-in 0.2s;
+        opacity: 0.5;
+    }
+
+    .algonquin, .entertainment{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /*wrapper section to grid the text*/
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .icons2 {
@@ -373,4 +565,6 @@ footer {
          margin-right: auto;
          margin-left: auto;
      }
+    
+
 }
