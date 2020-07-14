@@ -358,8 +358,8 @@ footer {
 .backtotop {
     max-width: 100%;
 }
-
-@media (min-width: 600px) {
+/* the tablet view start from here*/
+@media (min-width: 700px) {
     nav {
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -381,7 +381,7 @@ footer {
     }
 
     .discover1 {
-        margin-left: auto;
+        margin-left: 50px;
         margin-right: auto;
     }
 
