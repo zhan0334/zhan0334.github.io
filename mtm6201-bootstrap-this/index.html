@@ -1,15 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
-    href="https://code.jquery.com/jquery-3.4.1.slim.min.js" href="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>Boostrap This!</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Bootstrap This!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-info navbar-dark">
+       <!-- Image and text -->
+      <a class="navbar-brand" href="#">
+        <img src="img/bootstrap-logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Bootstrap
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav"  class="collapse navbar-collapse">
+        <div class="navbar-nav ml-auto">
+          <a href="index.html" class="nav-link active">About</a>
+          <a href="components.html" class="nav-link disable">Components</a>
+        </div>
+      </div>
+    </nav>
+     <main class="container">
+        <div class="row">
+          <div class="jumbotron">
+             <h1 class="display-4">About Bootstrap</h1>
+             <h3>Open Source</h3>
+             <p class="lead">Bootstrap is an open source toolkit for developing with HTML,CSS and JS. Quickly prototype your ideas or build your entire app with our 
+               Sass variables and mixins,responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
+             </p>
+          </div>
+          <div class="list-line-item col-md-12">
+            <h3>Mobile First</h3>
+            <p>Bootstrap includes a powerful Mobile-first flexbow grid to build layouts of all shapes and sizes thanks to a twelve column system, five default
+              responsive tiers, Sass veriables and mixins, and dozens of predefined classes.
+            </p>
+          </div>
+          <div class="jumbotron">
+            <div class="list-line-item col-md-12">
+              <h3>Components Library</h3>
+              <p>Bootstrap comes with an extensive components library that includes button and lists to carousels and modals. Components are easy to 
+               integrate into any site and required no knowledge of JavaScript to use.
+              </p>
+              <a href="components.html" class="btn btn-info btn-md active" role="button">More Information</a>
+            </div>
+          </div>
+          <div class="list-line-item col-md-12">
+            <h3>Alerts</h3>
+            <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages</p>
+         </div>
+         <div class="list-line-item col-md-12">
+            <h3>Breadcrumbs</h3>
+            <p>Indicate the current page's location within a navigational hierarchy that automatically adds separators via CSS</p>
+         </div>
+         <div class="list-line-items col-md-12">
+            <h3>List group</h3>
+            <p>List groups are a flexible and powerful component for displaying a series of content.</p>
+         </div>
+     </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
 </html>
