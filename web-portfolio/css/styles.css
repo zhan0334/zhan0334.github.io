@@ -1,0 +1,52 @@
+/* In the mockup, I use web font 'raleway'*/
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+    background-color: #457B9D;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+.navbar-brand {
+    max-width: 100px;
+}
+
+.butterfly {
+     max-width: 100%;
+    
+}
+
+.cow {
+    max-width: 100%;
+}
+
+.feed {
+    max-width: 100%;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    background-color:  #457B9D;
+    text-align: center;
+    padding: 20px;
+}

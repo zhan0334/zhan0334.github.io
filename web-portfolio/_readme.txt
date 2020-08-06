@@ -4,8 +4,10 @@ src: url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
 
 
 
-Icons can be found here - 
-
+ 
+I am using boostrap framework for my web portolio page.
+Also, I used few componponents including Carousel, navbar, buttons.
+image-fluid.
 
 Colours:	
 White #ffffff;
@@ -25,4 +27,11 @@ secondary body: 12px regular
 button: 10px bold 
 
 
-Most of the picture are made from myself. 
+Most of the picture are made from myself. When I design this web portolio page, the most chanllenge
+for me is in my mockup image is in the different postion and different size. I have to match for the mockup.
+I tried used many different way to create the image. 
+
+Other chanllenge is the navbar in my mockup, only three navigation( Home, portolio, Contact), Photography, and
+video sample is not inside nav, but is connect with portolio page. I should match to mackup. 
+I don't know the code import video into visual studio code. I tried to google but I didn't find any result. 
+Finally, I found in the 3schools.com 
