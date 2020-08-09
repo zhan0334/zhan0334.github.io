@@ -29,7 +29,7 @@ button: 10px bold
 
 Most of the picture are made from myself. When I design this web portolio page, the most chanllenge
 for me is in my mockup image is in the different postion and different size. I have to match for the mockup.
-I tried used many different way to create the image, and I have no idea how to  
+I tried used many different way to create the image, and I have no idea how to do it without javascript.
 
 Other chanllenge is the navbar in my mockup, only three navigation( Home, portolio, Contact), Photography, and
 video sample is not inside nav, but is connect with portolio page. I should match to mackup. 
