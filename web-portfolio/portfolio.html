@@ -12,49 +12,55 @@
     <title>Web Portfolio</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark">
       <!-- i use the burger navbar to match my mockup-->
-        <div class="navbar-brand">
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <img src="img/logo.png" class="logo" alt="logo"></a>
-        <div id="navbarNav" class="collapse navbar-collapse">
-          <div class="navbar-nav ml-auto">
-            <a href="index.html" class="nav-link disable">Home</a>
-            <a href="portfolio.html" class="nav-link active">Portfolio</a>
-            <a href="contact.html" class="nav-link disable">Contact</a>
-          </div>
-      </div>
-    </nav>
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <img src="img/logo.png" alt="logo" class="navbar-brand">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNav"  class="collapse navbar-collapse">
+           <div class="navbar-nav ml-auto">
+              <a href="index.html" class="nav-link disable">Home</a>
+              <a href="portfolio.html" class="nav-link active">Portfolio</a>
+              <a href="contact.html" class="nav-link disable">Contact</a>
+           </div>
+        </div>
+       </nav>
     <!--in this portfolio only have two link to connect with photographic sample and video sample-->
-    <main>
+    <main class="container">
       <div class="row">
         <div class="col-sm">
-          <img src="img/flower.JPEG" class="flower img-fluid " alt="flower">
-          <a href="photography.html" class="button active" role="button" aria-pressed="true">photographic Sample</a>
+          <div class="wrapper">
+            <p class="p1">Photoraphy</p>
+            <a class="btn btn-danger active" href="photography.html" role="button">Read More</a>
+            <img src="img/flower.JPEG" class="flower img-fluid" alt="flower">
+          </div>
         </div>
         <div class="col-sm">
-          <video controls>
-            <source src="img/goose.MP4" type="video/MP4">
-          </video>
-          <a href="video.html" class="button active" role="button" aria-pressed="true">Video Sample</a>
+          <div class="wrapper">
+            <p class="p2">Video</p> <!--I add class for the text becasue easier for me to overlay-->
+            <a class="btn btn-danger active" href="video.html" role="button">Read More</a>
+            <video controls>
+              <source src="img/goose.MP4" type="video/MP4">
+            </video>
+          </div>
         </div>
       </div>
     </main>
-    <footer>
       <!--I used four icon classes because it's easier to align them-->
+    <footer>
       <div class="footer">
         <div class="row">
-          <div class="col-sm">
+          <div class="social col-sm">
             <img class="ig" src="icons/instagram.svg" alt="instagram">
             <img class="tw" src="icons/twitter.svg" alt="twitter">
             <img class="fb" src="icons/facebook.svg" alt="facebook">
           </div>
-          <div class="col-sm">
-               <p>Copyright © 2020 All rights reserved</p>
+          <div class="copyright col-sm">
+            <p>Copyright © 2020 All rights reserved</p>
           </div>
         </div>
+      </div>
     </footer>
 
     <!-- Optional JavaScript -->

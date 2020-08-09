@@ -12,27 +12,26 @@
     <title>Web Portfolio</title>
   </head>
   <body>
-      <nav class="navbar navbar-expand-md navbar-dark">
-      <!-- i use the burger navbar to match my mockup-->
-        <div class="navbar-brand">
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <img src="img/logo.png" class="logo" alt="logo"></a>
-        <div id="navbarNav" class="collapse navbar-collapse">
+    <!-- i use the burger navbar to match my mockup-->
+    <nav class="navbar navbar-expand-md navbar-dark">
+       <img src="img/logo.png" alt="logo" class="navbar-brand">
+       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div id="navbarNav"  class="collapse navbar-collapse">
           <div class="navbar-nav ml-auto">
-            <a href="index.html" class="nav-link active">Home</a>
-            <a href="portfolio.html" class="nav-link disable">Portfolio</a>
-            <a href="contact.html" class="nav-link disable">Contact</a>
+             <a href="index.html" class="nav-link active">Home</a>
+             <a href="portfolio.html" class="nav-link disable">Portfolio</a>
+             <a href="contact.html" class="nav-link disable">Contact</a>
           </div>
-      </div>
-    </nav>
-    <!--this image slide show is using carousel-->
+       </div>
+      </nav>
+    <!--this image slideshow is using carousel-->
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li> 
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -53,29 +52,30 @@
       </a>
     </div>
     <main class="container">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <h1>About photography</h1>
+      <section class="about">
+        <div class="col-sm-12">
+            <h1>About photographer</h1>
             <h3>Shi Qi Zhang</h3>
             <p> is a student in Interactive Media Design pragram in Algonquin College. Her major is web design, and programming, as well as video and motion graphic. She used be a freelance graphic designer for a year. She was struggling how to find client and how to charge client. After few years as stay home Mom, she decided back to school  to learn something defferent. 
               Finally, she found the occupation what she really like  videographer/Animator.  </p>
-          </div>
         </div>
-      </div>
+      </section>
+      <a href="#" class="button btn-lg active" role="button" aria-pressed="true">Download Resume</a>
     </main>
+    <!--I used four icon classes because it's easier to align them-->
     <footer>
-      <!--I used four icon classes because it's easier to align them-->
       <div class="footer">
         <div class="row">
-          <div class="col-sm">
+          <div class="social col-sm">
             <img class="ig" src="icons/instagram.svg" alt="instagram">
             <img class="tw" src="icons/twitter.svg" alt="twitter">
             <img class="fb" src="icons/facebook.svg" alt="facebook">
           </div>
-          <div class="col-sm">
+          <div class="copyright col-sm">
             <p>Copyright © 2020 All rights reserved</p>
           </div>
+        </div>
+      </div>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

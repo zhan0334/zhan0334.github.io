@@ -12,38 +12,65 @@
     <title>Web Portfolio</title>
   </head>
   <body>
+     <!-- i use the burger navbar to match my mockup-->
     <nav class="navbar navbar-expand-md navbar-dark">
-      <!-- i use the burger navbar to match my mockup-->
-      <div class="navbar-brand">
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-          <img src="img/logo.png" class="logo" alt="logo"></a>
-        <div id="navbarNav" class="collapse navbar-collapse">
-          <div class="navbar-nav ml-auto">
-            <a href="index.html" class="nav-link active">Home</a>
+      <img src="img/logo.png" alt="logo" class="navbar-brand">
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav"  class="collapse navbar-collapse">
+        <div class="navbar-nav ml-auto">
+            <a href="index.html" class="nav-link disable">Home</a>
             <a href="portfolio.html" class="nav-link disable">Portfolio</a>
-            <a href="contact.html" class="nav-link disable">Contact</a>
-          </div>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </div>
       </div>
     </nav>
     <main class="container">
       <div class="row">
-        <div class="column">
-           
+        <form class="contact-form">
+          <p class="p3">Contact Us</p>
+          <div class="col-sm-12">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname">
+          </div>
+          <div class="col-sm-12">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname">
+          </div>
+          <div class="col-sm-12">
+            <label for="number">Phone</label>
+            <input type="phone" id="phone" value="Phone">
+          </div>
+          <div class="col-sm-12">
+            <label for="email">Email</label>
+            <input type="email" id="email" value="Email">
+          </div>
+          <div class="col-sm-12">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" value="Message"></textarea>
+          </div>
+          <button class="button-submit" type="submit">Submit</button>
+        </form>
+        <div class="col-md-12 col-lg-6">
+          <img src="img/architecture.jpg" alt="architecture" class="architecture">
         </div>
       </div>
     </main>
-    <div class="footer">
-      <div class="row">
-        <div class="col-sm">
-          <img class="ig" src="icons/instagram.svg" alt="instagram">
-          <img class="tw" src="icons/twitter.svg" alt="twitter">
-          <img class="fb" src="icons/facebook.svg" alt="facebook">
+     <!--I used four icon classes because it's easier to align them-->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <div class="social col-sm">
+            <img class="ig" src="icons/instagram.svg" alt="instagram">
+            <img class="tw" src="icons/twitter.svg" alt="twitter">
+            <img class="fb" src="icons/facebook.svg" alt="facebook">
+          </div>
+          <div class="copyright col-sm">
+            <p>Copyright © 2020 All rights reserved</p>
+          </div>
         </div>
-        <div class="col-sm">
-          <p>Copyright © 2020 All rights reserved</p>
-        </div>
+      </div>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
