@@ -119,6 +119,7 @@ body{
 
 .bird {
     max-width: 100%;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 /* There is a transition in the portfolio mockup page,
@@ -251,6 +252,7 @@ input[type="text"] ,input[type="phone"] , input[type="email"], textarea {
    .sample {
        margin-top: 10px;
    }
+   
 
    .contact-form {
        margin-left: 20px;
