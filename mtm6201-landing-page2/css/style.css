@@ -1,6 +1,6 @@
 @font-face {
-    font-family: montserrat-black;
-    font-family: montserrat-light;
+    font-family: 'montserrat-black' sans-serif;
+    font-family: 'montserrat-light' sans-serif;
 }
 
 
@@ -15,11 +15,12 @@ body {
 }
 
 main{
-    
+    margin: 1rem;
+    margin-bottom: 0;
 }
 
 .header-logo {
-    max-width: 30%;
+    max-width: 150px;
     margin: 0 auto;
 }
 
@@ -31,17 +32,22 @@ h2 {
 }
 
 section, footer {
+    display: block;
     padding: 20px;
 }
 
 h1 {
     font-family: 'montserrat-black', sans-serif;
     font-size: 2rem;
+    margin-top: 1rem;
+    color: #333131;
 }
 
-p  {
+p {
     font-family: 'montserrat-light', sans-serif;
     font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .scooter {
@@ -50,20 +56,11 @@ p  {
     margin-left: auto;
 }
 
-.container {
-    max-width: 500px;
-    height: auto;
-    margin-top: 1rem;
-    background-color: white;
-    box-shadow:  10px 10px 5px grey;
-    border-radius: 25px;
-    text-align: center;  
-}
-
 .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
+    border: 1px;
+    border-radius:30px;
+    box-shadow: 1px 5px 5px 5px lightgray;
+    background-color: white;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
@@ -132,6 +129,7 @@ button {
 
 .calculator-form {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     flex-grow: -1;
 }
@@ -171,10 +169,32 @@ button {
 }
 
 @media (max-width: 1100px) {
-    .section {
-        display: flex;
-
+    .logo {
+        width: 80px;
+        margin-left: 5%;
+        margin-top:-0.5%;
     }
+
+    .scooter {
+        display: none;
+    }
+
+    body {
+        background-image: url(../images/scooter.svg);
+        background-repeat:no-repeat;
+        background-size: 42%;
+        background-position: center 1360px;
+    }
+    
+    .section {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+        grid-gap:15rem;
+        margin-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
 
 
 }
